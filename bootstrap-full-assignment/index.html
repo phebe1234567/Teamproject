@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phebe - Responsive Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-uppercase" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#">Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Consulting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-lg-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="container-fluid bg-primary text-white text-center py-5 py-section d-flex align-items-center justify-content-center" style="min-height: 100vh; padding-top: 5rem;">
+        <div class="container my-5">
+            <h1 class="display-4 fw-bold mb-4">Welcome to My Awesome Site!</h1>
+            <p class="lead mb-5">Discover cutting-edge solutions and creative designs tailored for your needs.</p>
+            <a href="#features" class="btn btn-light btn-lg me-3 shadow-lg">Learn More</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg shadow-lg">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="features" class="container py-5 my-5">
+        <h2 class="display-5 fw-bold text-center mb-5 text-dark">Key Features</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-lg p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-cogs text-primary fs-1 mb-3"></i>
+                        <h3 class="h4 fw-bold mb-3">Custom Development</h3>
+                        <p class="text-muted">Tailored software solutions designed to meet your unique business requirements with precision and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-lg p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-palette text-info fs-1 mb-3"></i>
+                        <h3 class="h4 fw-bold mb-3">Stunning Design</h3>
+                        <p class="text-muted">Crafting visually appealing and intuitive user interfaces that engage your audience and enhance user experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-lg p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-mobile-alt text-success fs-1 mb-3"></i>
+                        <h3 class="h4 fw-bold mb-3">Fully Responsive</h3>
+                        <p class="text-muted">Websites and applications that adapt seamlessly to any device, ensuring an optimal viewing experience everywhere.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-lg p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-rocket text-warning fs-1 mb-3"></i>
+                        <h3 class="h4 fw-bold mb-3">Fast Performance</h3>
+                        <p class="text-muted">Optimizing every aspect for lightning-fast loading times and smooth interactions, crucial for user retention.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-lg p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-shield-alt text-danger fs-1 mb-3"></i>
+                        <h3 class="h4 fw-bold mb-3">Secure & Reliable</h3>
+                        <p class="text-muted">Building robust and secure digital platforms that protect your data and ensure consistent, uninterrupted service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 rounded-lg p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-headset text-secondary fs-1 mb-3"></i>
+                        <h3 class="h4 fw-bold mb-3">Dedicated Support</h3>
+                        <p class="text-muted">Providing comprehensive and prompt support to ensure your operations run smoothly and any issues are quickly resolved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container-fluid bg-info bg-opacity-10 py-5 my-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-5 text-dark">Our Portfolio</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow rounded-lg overflow-hidden">
+                        <img src="work-1.png" class="card-img-top img-fluid" alt="Project One">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold text-primary">Modern Web App</h3>
+                            <p class="card-text text-muted">A sleek and functional web application built with the latest technologies for seamless user experience.</p>
+                            <div class="btn-group w-100" role="group" aria-label="Project Actions">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow rounded-lg overflow-hidden">
+                        <img src="work-2.png" class="card-img-top img-fluid" alt="Project Two">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold text-primary">E-commerce Platform</h3>
+                            <p class="card-text text-muted">A robust e-commerce solution with secure payment integration and intuitive product management.</p>
+                            <div class="btn-group w-100" role="group" aria-label="Project Actions">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow rounded-lg overflow-hidden">
+                        <img src="work-3.png" class="card-img-top img-fluid" alt="Project Three">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold text-primary">Mobile Game Design</h3>
+                            <p class="card-text text-muted">Engaging mobile game with captivating graphics and addictive gameplay mechanics.</p>
+                            <div class="btn-group w-100" role="group" aria-label="Project Actions">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow rounded-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Project+Four" class="card-img-top img-fluid" alt="Project Four">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold text-primary">Data Analytics Dashboard</h3>
+                            <p class="card-text text-muted">Interactive dashboard for visualizing complex data sets, aiding in informed decision-making.</p>
+                            <div class="btn-group w-100" role="group" aria-label="Project Actions">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Demo</a>
+                                <a href="#" class="btn btn-outline-secondary btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="container py-5 my-5">
+        <h2 class="display-5 fw-bold text-center mb-5 text-dark">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush mb-5" id="faqAccordion">
+            <div class="accordion-item shadow-sm mb-3 rounded-lg">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What services do you offer?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        We offer comprehensive web development, stunning web design, mobile application development, and IT consulting services tailored to your specific needs.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item shadow-sm mb-3 rounded-lg">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How long does a typical project take?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Project timelines vary based on complexity and scope. A typical small website might take 4-6 weeks, while larger applications can take several months. We provide detailed timelines after initial consultation.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item shadow-sm mb-3 rounded-lg">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What is your pricing model?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Our pricing is project-based, tailored to the specific requirements and features you need. We offer competitive rates and transparent quotes after a thorough understanding of your project.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="h4 fw-bold text-center mb-4">Related Topics</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ul class="list-group list-group-flush shadow-sm rounded-lg">
+                    <li class="list-group-item">Getting Started with Your Project</li>
+                    <li class="list-group-item">Our Technology Stack</li>
+                    <li class="list-group-item">Maintenance & Support Plans</li>
+                    <li class="list-group-item">Client Testimonials</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container-fluid bg-primary bg-opacity-10 py-5 my-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-5 text-dark">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card p-4 shadow-lg rounded-lg border-0">
+                        <div class="card-body">
+                            <form class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="nameInput" class="form-label fw-bold">Name</label>
+                                    <input type="text" class="form-control" id="nameInput" placeholder="Your Name" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailInput" class="form-label fw-bold">Email address</label>
+                                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageTextarea" class="form-label fw-bold">Message</label>
+                                    <textarea class="form-control" id="messageTextarea" rows="5" placeholder="Your message here..." required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter your message.
+                                    </div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                                    <label class="form-check-label" for="termsCheck">Agree to terms and conditions</label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-lg px-5 mt-3 shadow-sm">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <p class="h5 fw-bold mb-3 text-dark">Or find us here:</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item me-3">
+                                <i class="fas fa-phone-alt fs-4 text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="+123 456 7890"></i>
+                            </li>
+                            <li class="list-inline-item me-3">
+                                <i class="fas fa-envelope fs-4 text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="info@example.com"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fas fa-map-marker-alt fs-4 text-info" data-bs-toggle="tooltip" data-bs-placement="top" title="123 Main St, Anytown, USA"></i>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-outline-secondary me-3" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">
+                                Open Privacy Policy
+                            </button>
+                            <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-muted">
+                   <p>This Privacy Policy details how
+                        my  Website  collects, uses, and shares your information when 
+                        you visit our site. We gather personal data you provide, like
+                         contact details, and automatically collect usage data such as 
+                         IP addresses and Browse patterns via cookies, which you can manage 
+                         in your browser settings. This information is used to operate and 
+                         improve our services, fulfill your requests, and for site analytics. We may share your data with service providers or affiliates, for business transfers, or to comply with legal obligations; we never sell your personal information. We've implemented security measures, but acknowledge no internet transmission is fully secure. Our site isn't for children under 13, and we delete any such data found. We'll update this policy periodically, so please review it for changes. Contact us at [Your Email Address] with any privacy questions.
+
+                    </p>
+                    <p>Your privacy is important to us. This policy explains how we collect, use, and disclose personal information. By using our website, you consent to the data practices described in this policy.</p>
+                    <p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information unless we provide you with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header bg-primary text-white">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">More Information</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h6 class="fw-bold mb-3">About Our Company</h6>
+            <p class="text-muted">We are a dedicated team of professionals passionate about delivering high-quality digital solutions. Our mission is to empower businesses and individuals through innovative technology and exceptional service.</p>
+            <hr>
+            <h6 class="fw-bold mb-3">Contact Details</h6>
+            <p class="text-muted">
+                <i class="fas fa-map-marked-alt me-2 text-info"></i> 123 Digital Way, Tech City, 98765<br>
+                <i class="fas fa-phone me-2 text-info"></i> +1 (234) 567-8901<br>
+                <i class="fas fa-envelope me-2 text-info"></i> info@ourcompany.com
+            </p>
+            <hr>
+            <h6 class="fw-bold mb-3">Follow Us</h6>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#" class="text-primary fs-4"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-info fs-4"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-danger fs-4"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-primary fs-4"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        });
+    </script>
+</body>
+</html>
